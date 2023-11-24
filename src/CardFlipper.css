@@ -1,0 +1,51 @@
+/* CardFlipper.css */
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    backface-visibility: hidden;
+    transition: transform 2s;
+  }
+  
+  
+  .front {
+    background-color: #3163c0;
+  }
+  
+  .back {
+    background-color: #a0a0a0;
+    transform: rotateY(180deg);
+  }
+  
+  .card.flip .front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flip .back {
+    transform: rotateY(360deg);
+  }
+  
+
+  .TopCard {
+    display: flex;
+    justify-content: space-between; /* Mengatur jarak horizontal antar elemen */
+    padding: 10px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    margin-right: 10px; /* Jarak antara logo dan teks */
+  }
+  
