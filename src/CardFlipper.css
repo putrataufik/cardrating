@@ -17,11 +17,15 @@
   
   
   .front {
-    background-color: #3163c0;
+    background: radial-gradient(circle, #56c0ff, #2679ff);
+    border-radius: 15px;
+    /* Sesuaikan dengan ukuran dan posisi yang Anda inginkan */
   }
   
   .back {
-    background-color: #a0a0a0;
+    background: radial-gradient(circle, #56c0ff, #2679ff);
+    border-radius: 15px;
+    /* Sesuaikan dengan ukuran dan posisi yang Anda inginkan */
     transform: rotateY(180deg);
   }
   
